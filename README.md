@@ -2,6 +2,8 @@
 
 ### Для выполнения задания использовал microk8s, т.к. kubeadm не поддерживает network policies, а kubespray долго ставится. Также использовал yandex cloud для развертывания виртуалки с помощью terraform. Для подов использовал образы nginx и network-multitools.
 
+Запуск виртуалки производится terraform apply из директории ubuntu    
+
 ```
 ubuntu@server-kube:~$ micro config set-context --current --namespace=web
 Context "microk8s" modified.
